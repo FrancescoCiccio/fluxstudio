@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.custom-gradient {
+    background: linear-gradient(to right, rgba(246,250,250, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(246,250,250, 1) 100%);
+}
+
+@layer base {
+    body {
+        @apply bg-secondary-400 text-sm md:text-base text-primary-400;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        @apply text-primary-900;
+    }
+
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl font-semibold;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+    }
+
+    h3 {
+        @apply text-2xl md:text-3xl lg:text-5xl font-semibold;
+    }
+
+}
