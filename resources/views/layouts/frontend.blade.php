@@ -20,6 +20,8 @@
 
         @yield('content')
 
+        @include('layouts.footer.main')
+
         @stack('scripts')
     </body>
 </html>

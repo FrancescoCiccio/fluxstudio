@@ -1,5 +1,7 @@
 import './bootstrap';
 
+import SplitType from 'split-type'
+
 import Alpine from 'alpinejs';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css'
@@ -25,14 +27,15 @@ const lenis = new Lenis()
 
 lenis.on('scroll', ScrollTrigger.update)
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
 })
 
 gsap.ticker.lagSmoothing(0)
 
 
 
+window.SplitType = SplitType;
 window.Alpine = Alpine;
 window.Swiper = Swiper;
 window.gsap = gsap;
@@ -42,10 +45,10 @@ Alpine.start();
 const fadeins = document.querySelectorAll('img.fadein');
 
 fadeins.forEach((element) => {
-    gsap.fromTo(element, 
-        { 
-            opacity: 0, 
-            y: 50 
+    gsap.fromTo(element,
+        {
+            opacity: 0,
+            y: 50
         }, // Stato iniziale
         {
             opacity: 1,
@@ -63,10 +66,10 @@ fadeins.forEach((element) => {
 const parallaxes = document.querySelectorAll('img.parallax');
 
 parallaxes.forEach((element) => {
-    gsap.fromTo(element, 
-        { 
+    gsap.fromTo(element,
+        {
             marginTop: 25,
-            opacity: .85 
+            opacity: .85
         }, // Stato iniziale
         {
             opacity: 1,
@@ -82,18 +85,41 @@ parallaxes.forEach((element) => {
 });
 
 document.addEventListener('foo', (event) => {
-    const opened  = event.detail; // Ottieni il valore di opened dall'evento
+    const opened = event.detail; // Ottieni il valore di opened dall'evento
 
-    
+
     if (opened) {
-      
+
         document.body.style.height = '100vh';
         document.body.style.overflow = 'hidden'; // Blocca lo scroll
     } else {
-       
+
         document.body.style.height = 'auto';
         document.body.style.overflow = 'auto'; // Sblocca lo scroll
     }
 
     console.log('Foo event received!', opened);
 });
+
+const toSplits = document.querySelectorAll('.splits')
+
+toSplits.forEach((el, index) => {
+    let text = new SplitType(el);
+
+    let tl = new gsap.timeline({ defaults: { ease: 'bounce.out' } });
+
+    gsap.set(el, { autoAlpha: 1 });
+
+    tl.
+        from(text.words, {
+            y: 40,
+            opacity: 0,
+            skewX: 30,
+            stagger: 0.02,
+            duration: 1,
+            scrollTrigger: {
+                trigger: el,
+                scrub: index == 0 ? false : true,
+            }
+        })
+})
