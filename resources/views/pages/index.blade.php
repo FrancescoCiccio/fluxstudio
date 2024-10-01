@@ -18,9 +18,9 @@
                 A reliable coding partner that delivers solutions to your business challenges and stays by your side in the long term. Having the whole spectrum of web development expertise, we are here to take care of your projects while making it possible for you to focus on growing your own business.
             </p>
     
-            <div>
+            <div class="lg:flex gap-x-4">
                 <x-link-button
-                        class="w-full justify-center"
+                        class="w-full lg:w-auto justify-center"
                         href="#ciao">
                         <x-slot name="icon">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
                 </x-link-button>
         
                 <x-link-button-secondary
-                        class="w-full justify-center mt-2"
+                        class="w-full justify-center lg:w-auto"
                         href="#ciao">                          
                         Contattaci
                 </x-link-button-secondary>

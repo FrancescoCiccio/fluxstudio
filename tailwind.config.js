@@ -10,6 +10,11 @@ export default {
     ],
 
     theme: {
+        container: {
+            maxWidth: {
+                '2xl': '1280px'
+            }
+        },
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],

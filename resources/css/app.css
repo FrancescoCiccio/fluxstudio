@@ -27,6 +27,14 @@
     background: linear-gradient(to right, rgba(246, 250, 250, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(246, 250, 250, 1) 100%);
 }
 
+@layer components {
+    @media (min-width: 1536px) {
+        .container {
+            max-width: 1280px;
+        }
+    }
+}
+
 @layer base {
     body {
         @apply bg-secondary-400 text-sm md:text-base text-primary-400;
