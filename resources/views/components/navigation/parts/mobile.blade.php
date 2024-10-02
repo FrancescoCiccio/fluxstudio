@@ -180,16 +180,8 @@
                 class="w-full justify-center"
                 href="#ciao">
                 <x-slot name="icon">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_147_439)">
-                                <path d="M19 9.8C19.0034 11.1199 18.695 12.4219 18.1 13.6C17.3944 15.0117 16.3097 16.1992 14.9674 17.0293C13.6251 17.8594 12.0782 18.2994 10.5 18.3C9.18012 18.3034 7.8781 17.9951 6.69999 17.4L1 19.3L2.9 13.6C2.30493 12.4219 1.99656 11.1199 2 9.8C2.00061 8.22176 2.44061 6.67486 3.27072 5.33256C4.10082 3.99026 5.28825 2.90558 6.69999 2.20001C7.8781 1.60495 9.18012 1.29658 10.5 1.30002H11C13.0843 1.41501 15.053 2.29478 16.5291 3.77087C18.0052 5.24697 18.885 7.21566 19 9.3V9.8Z" stroke="#F6FAFA" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_147_439">
-                                <rect width="20" height="20" fill="white" transform="translate(0 0.299988)"/>
-                                </clipPath>
-                                </defs>
-                        </svg>
+                        <x-heroicon-o-chat-bubble-oval-left-ellipsis
+                                                                        class="w-5 h-5 text-white" />
                 </x-slot>                                        
                 Prenota subito una call
         </x-link-button>

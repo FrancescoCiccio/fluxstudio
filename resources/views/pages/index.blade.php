@@ -6,16 +6,16 @@
     <header class="px-5 container flex mx-auto md:mt-32 lg:justify-between ">
 
         <div class="w-full lg:w-1/2 flex flex-col gap-y-4 items-start">
-            <span class="inline-flex gap-x-2 bg-white  py-2 rounded-full text-sm text-primary-600 px-4">
-                Da 0 a consegnato, per tutti i tuoi progetti
+            <span class="inline-flex gap-x-2 bg-white  py-2 rounded-full text-xs lg:text-sm text-primary-600 px-4">
+                Da zero a realtà: trasformiamo le tue idee in soluzioni digitali
             </span>
     
             <h1 class="font-[700] tracking-[-2px] splits">
-                White label Full <br /> Stack services
+                Portiamo le tue idee nel mondo digitale
             </h1>
     
             <p class="text-primary-400 text-base">
-                A reliable coding partner that delivers solutions to your business challenges and stays by your side in the long term. Having the whole spectrum of web development expertise, we are here to take care of your projects while making it possible for you to focus on growing your own business.
+                Siamo un team di appassionati prima che professionisti, innamorati di ciò che facciamo e specializzati nel trasformare le tue visioni in realtà digitali. Dalle app mobile ai siti web, passando per design UX/UI e automazioni, lavoriamo al tuo fianco con passione e competenza. Offriamo servizi white label dedicati alle agenzie di comunicazione, permettendo loro di ampliare l’offerta senza investimenti aggiuntivi. Parliamo la tua lingua e creiamo soluzioni su misura per il tuo business. Prenota subito una call e iniziamo insieme questa avventura!
             </p>
     
             <div class="lg:flex gap-x-4">
@@ -23,23 +23,19 @@
                         class="w-full lg:w-auto justify-center"
                         href="#ciao">
                         <x-slot name="icon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_147_439)">
-                                        <path d="M19 9.8C19.0034 11.1199 18.695 12.4219 18.1 13.6C17.3944 15.0117 16.3097 16.1992 14.9674 17.0293C13.6251 17.8594 12.0782 18.2994 10.5 18.3C9.18012 18.3034 7.8781 17.9951 6.69999 17.4L1 19.3L2.9 13.6C2.30493 12.4219 1.99656 11.1199 2 9.8C2.00061 8.22176 2.44061 6.67486 3.27072 5.33256C4.10082 3.99026 5.28825 2.90558 6.69999 2.20001C7.8781 1.60495 9.18012 1.29658 10.5 1.30002H11C13.0843 1.41501 15.053 2.29478 16.5291 3.77087C18.0052 5.24697 18.885 7.21566 19 9.3V9.8Z" stroke="#F6FAFA" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_147_439">
-                                        <rect width="20" height="20" fill="white" transform="translate(0 0.299988)"/>
-                                        </clipPath>
-                                        </defs>
-                                </svg>
-                        </x-slot>                                        
+                            <x-heroicon-o-chat-bubble-oval-left-ellipsis
+                                class="w-5 h-5 text-white" />                                        
+                        </x-slot>
                         Prenota subito una call
                 </x-link-button>
         
                 <x-link-button-secondary
                         class="w-full justify-center lg:w-auto"
-                        href="#ciao">                          
+                        href="#ciao">
+                        <x-slot name="icon">
+                            <x-heroicon-o-envelope
+                                class="w-5 h-5 text-primary-600" />                                        
+                        </x-slot>                        
                         Contattaci
                 </x-link-button-secondary>
             </div>
@@ -113,14 +109,14 @@
 
         <section class="mt-16">
             <div class="container mx-auto px-5">
-                <h2 class="splits">
-                    White label services.
+                <h2 class="max-w-2xl">
+                    Soluzioni digitali su misura per il tuo successo
                 </h2>
-                <h3 class="text-primary-400">
-                    Cosa significa, e come funziona.
+                <h3 class="text-primary-400 text-xl lg:text-3xl max-w-xl">
+                    Dalle soluzioni custom alle App mobile, passando per Siti Web, eCommerce e Design UI/UX
                 </h3>
                 <p class="mt-4 text-base lg:max-w-4xl">
-                    Immaginate di poter ampliare immediatamente la vostra offerta senza dover investire tempo e risorse nella creazione di nuovi servizi. Un servizio di white label vi permette esattamente questo. Noi sviluppiamo soluzioni digitali all’avanguardia—siti web dinamici, potenti e-commerce, applicazioni mobile innovative, design UI/UX coinvolgenti e sistemi di automazione efficienti—che voi potete offrire ai vostri clienti con il vostro marchio. È come avere un intero team di esperti al vostro servizio, pronto a realizzare le vostre visioni senza che dobbiate muovere un dito. Questo vi consente di concentrarvi su ciò che sapete fare meglio, aumentando al contempo il valore percepito dai vostri clienti e rafforzando la vostra posizione nel mercato.
+                    Siamo qui per trasformare le tue idee in realtà digitali. Offriamo soluzioni custom come CRM, gestionali e software personalizzati che si adattano perfettamente alle esigenze del tuo business. Realizziamo siti web e eCommerce che catturano l’attenzione e convertono i visitatori in clienti. Sviluppiamo applicazioni native per iOS e Android, portando il tuo brand direttamente nelle mani dei tuoi utenti. Il nostro team di esperti in UI/UX Design crea esperienze intuitive e coinvolgenti che mettono l’utente al centro. E se sei un’agenzia di comunicazione, scopri i nostri servizi in white label per ampliare la tua offerta senza investimenti aggiuntivi. Prenota subito una call e insieme daremo vita alle tue idee nel mondo digitale!
                 </p>
             </div>
         </section>
@@ -290,23 +286,19 @@
                     class="w-full lg:w-auto justify-center"
                     href="#ciao">
                     <x-slot name="icon">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_147_439)">
-                                    <path d="M19 9.8C19.0034 11.1199 18.695 12.4219 18.1 13.6C17.3944 15.0117 16.3097 16.1992 14.9674 17.0293C13.6251 17.8594 12.0782 18.2994 10.5 18.3C9.18012 18.3034 7.8781 17.9951 6.69999 17.4L1 19.3L2.9 13.6C2.30493 12.4219 1.99656 11.1199 2 9.8C2.00061 8.22176 2.44061 6.67486 3.27072 5.33256C4.10082 3.99026 5.28825 2.90558 6.69999 2.20001C7.8781 1.60495 9.18012 1.29658 10.5 1.30002H11C13.0843 1.41501 15.053 2.29478 16.5291 3.77087C18.0052 5.24697 18.885 7.21566 19 9.3V9.8Z" stroke="#F6FAFA" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_147_439">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.299988)"/>
-                                    </clipPath>
-                                    </defs>
-                            </svg>
+                        <x-heroicon-o-chat-bubble-oval-left-ellipsis
+                            class="w-5 h-5 text-white" />
                     </x-slot>                                        
                     Prenota subito una call
                 </x-link-button>
     
                 <x-link-button-secondary
                         class="w-full lg:w-auto justify-center"
-                        href="#ciao">                          
+                        href="#ciao">
+                        <x-slot name="icon">
+                            <x-heroicon-o-academic-cap
+                                lass="w-5 h-5 text-primary-600" />
+                        </x-slot>                          
                         Scopri i vantaggi
                 </x-link-button-secondary>
             </div>
@@ -552,16 +544,8 @@
                         class="w-full lg:w-auto justify-center"
                         href="#ciao">
                         <x-slot name="icon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_147_439)">
-                                        <path d="M19 9.8C19.0034 11.1199 18.695 12.4219 18.1 13.6C17.3944 15.0117 16.3097 16.1992 14.9674 17.0293C13.6251 17.8594 12.0782 18.2994 10.5 18.3C9.18012 18.3034 7.8781 17.9951 6.69999 17.4L1 19.3L2.9 13.6C2.30493 12.4219 1.99656 11.1199 2 9.8C2.00061 8.22176 2.44061 6.67486 3.27072 5.33256C4.10082 3.99026 5.28825 2.90558 6.69999 2.20001C7.8781 1.60495 9.18012 1.29658 10.5 1.30002H11C13.0843 1.41501 15.053 2.29478 16.5291 3.77087C18.0052 5.24697 18.885 7.21566 19 9.3V9.8Z" stroke="#F6FAFA" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_147_439">
-                                        <rect width="20" height="20" fill="white" transform="translate(0 0.299988)"/>
-                                        </clipPath>
-                                        </defs>
-                                </svg>
+                            <x-heroicon-o-chat-bubble-oval-left-ellipsis
+                                class="w-5 h-5 text-white" />
                         </x-slot>                                        
                         Prenota subito una call
                     </x-link-button>
