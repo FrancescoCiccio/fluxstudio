@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('slots', function (Blueprint $table) {
             $table->id();
-            $table->date('date'); // Data dello slot
             $table->time('start_time'); // Ora d'inizio
             $table->time('end_time'); // Ora di fine
+            $table->text('days_of_week'); // Giorno della settimana
             $table->boolean('is_available')->default(true); // Disponibilità
             $table->timestamps();
         });

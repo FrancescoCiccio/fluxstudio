@@ -24,7 +24,7 @@ class SlotResource extends Resource
         return $form->schema([
             Forms\Components\TimePicker::make('start_time')->native(false)->required()->seconds(false),
             Forms\Components\TimePicker::make('end_time')->native(false)->required()->seconds(false),
-            Forms\Components\Select::make('weekdays')
+            Forms\Components\Select::make('days_of_week')
                 ->multiple()
                 ->options([
                     0 => 'Sunday',

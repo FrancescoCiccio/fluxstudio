@@ -10,12 +10,11 @@ class Slot extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['start_time', 'end_time', 'is_available'];
+    protected $fillable = ['start_time', 'end_time', 'is_available', 'days_of_week'];
 
-    public function weekdays()
-    {
-        return $this->belongsToMany(Weekday::class, 'slot_weekday', 'slot_id', 'day_of_week');
-    }
+    protected $casts = [
+        'days_of_week'  => 'array'
+    ];
 
     public function bookings(): HasMany
     {
