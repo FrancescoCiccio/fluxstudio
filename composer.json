@@ -11,6 +11,7 @@
         "blade-ui-kit/blade-icons": "^1.7",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "owenvoke/blade-fontawesome": "^2.6",
         "z3d0x/filament-fabricator": "^2.2"

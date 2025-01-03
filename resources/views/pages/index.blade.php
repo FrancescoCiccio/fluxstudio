@@ -21,7 +21,9 @@
             <div class="lg:flex gap-x-4">
                 <x-link-button
                         class="w-full lg:w-auto justify-center"
-                        href="#ciao">
+                        href="#ciao"
+                        x-data
+                        @click="$dispatch('book')">
                         <x-slot name="icon">
                             <x-heroicon-o-chat-bubble-oval-left-ellipsis
                                 class="w-5 h-5 text-white" />                                        

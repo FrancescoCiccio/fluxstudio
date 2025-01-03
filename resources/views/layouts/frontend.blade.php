@@ -18,6 +18,8 @@
     <body>
         @include('layouts.navigation.main')
 
+        @include('layouts.booking.booking')
+
         @yield('content')
 
         @include('layouts.footer.main')

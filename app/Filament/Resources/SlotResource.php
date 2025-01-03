@@ -44,8 +44,8 @@ class SlotResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('start_time')->label('Start Time'),
-                Tables\Columns\TextColumn::make('end_time')->label('End Time'),
+                Tables\Columns\TextColumn::make('start_time')->label('Start Time')->time('H:i'),
+                Tables\Columns\TextColumn::make('end_time')->label('End Time')->time('H:i'),
                 Tables\Columns\IconColumn::make('is_available')->label('Available')
                     ->boolean(true),
             ])
